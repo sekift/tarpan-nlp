@@ -13,6 +13,6 @@ public class ApplicationRunnerImpl implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         ChineseProperties.getCore();
-        System.out.println("运营管理系统inside启动完毕");
+        System.out.println("Stanford分词程序启动完毕");
     }
 }

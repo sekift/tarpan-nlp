@@ -1,7 +1,6 @@
 package com.nlp.tarpan.www.config;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import org.springframework.context.annotation.Configuration;
 
 import java.util.Properties;
 
