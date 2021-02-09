@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -16,7 +17,7 @@ public class NlpServiceController {
     private NlpService nlpService;
 
     @PostMapping("/parser")
-    public Map<String, String> parser(String input){
+    public Map<String, List<String>> parser(String input) {
         return nlpService.parser(input);
     }
 }

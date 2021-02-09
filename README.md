@@ -15,11 +15,23 @@ European Wild Horse(Tarpan)，欧洲野马于1877年灭绝。 在这里是斯坦
 2. 硬盘4G+
 ### 📰 输出结果展示
 ````text
-"input": "酒店实在差，房间又小又脏，卫生间环境太差，整个酒店有点像马路边上的招待所。"
+"input": "设施还将就,但服务是相当的不到位!休息了一个晚上我白天出去,中午回来的时候居然房间都没有整理.尽管我挂了要求整理房间的牌子."
 {
-    "seged": "酒店 实在 差 ， 房间 又 小 又 脏 ， 卫生间 环境 太 差 ， 整 个 酒店 有点 像 马路 边上 的 招待所 。",
-    "posed": "酒店#NN 实在#AD 差#VA ，#PU 房间#NN 又#AD 小#VA 又#AD 脏#VA ，#PU 卫生间#NN 环境#NN 太#AD 差#VA ，#PU 整#DT 个#M 酒店#NN 有点#AD 像#VV 马路#NN 边上#LC 的#DEG 招待所#NN 。#PU",
-    "parsed": "root(ROOT-0, 差-3)   nsubj(差-3, 酒店-1)   advmod(差-3, 实在-2)   punct(差-3, ，-4)   nsubj(小-7, 房间-5)   advmod(小-7, 又-6)   conj(差-3, 小-7)   advmod(脏-9, 又-8)   conj(小-7, 脏-9)   punct(差-3, ，-10)   compound:nn(环境-12, 卫生间-11)   nsubj(差-14, 环境-12)   advmod(差-14, 太-13)   conj(差-3, 差-14)   punct(差-3, ，-15)   det(酒店-18, 整-16)   mark:clf(整-16, 个-17)   nsubj(像-20, 酒店-18)   advmod(像-20, 有点-19)   conj(差-3, 像-20)   nmod(招待所-24, 马路-21)   case(马路-21, 边上-22)   case(马路-21, 的-23)   dobj(像-20, 招待所-24)   punct(差-3, 。-25)"
+    "seged": [
+        "设施 还 将 就 , 但 服务 是 相当 的 不 到位 !",
+        "休息 了 一 个 晚上 我 白天 出去 , 中午 回来 的 时候 居然 房间 都 没有 整理 .",
+        "尽管 我 挂 了 要求 整理 房间 的 牌子 ."
+    ],
+    "posed": [
+        "设施#NN 还#AD 将#AD 就#P ,#PU 但#AD 服务#NN 是#VC 相当#AD 的#DEV 不#AD 到位#VV !#PU",
+        "休息#VV 了#AS 一#CD 个#M 晚上#NT 我#PN 白天#NT 出去#VV ,#PU 中午#NT 回来#VV 的#DEC 时候#NN 居然#AD 房间#NN 都#AD 没有#VE 整理#NN .#PU",
+        "尽管#CS 我#PN 挂#VV 了#AS 要求#NN 整理#VV 房间#NN 的#DEC 牌子#NN .#PU"
+    ],
+    "parsed": [
+        "root(ROOT-0, 到位-12)   nsubj(到位-12, 设施-1)   advmod(到位-12, 还-2)   advmod(到位-12, 将-3)   case(到位-12, 就-4)   punct(到位-12, ,-5)   advmod(到位-12, 但-6)   nsubj(到位-12, 服务-7)   cop(到位-12, 是-8)   dep(到位-12, 相当-9)   mark(相当-9, 的-10)   neg(到位-12, 不-11)   punct(到位-12, !-13)",
+        "root(ROOT-0, 没有-17)   dep(没有-17, 休息-1)   aux:asp(休息-1, 了-2)   nummod(晚上-5, 一-3)   mark:clf(一-3, 个-4)   dobj(休息-1, 晚上-5)   nsubj(出去-8, 我-6)   dep(出去-8, 白天-7)   acl(时候-13, 出去-8)   punct(出去-8, ,-9)   nmod:tmod(回来-11, 中午-10)   conj(出去-8, 回来-11)   mark(出去-8, 的-12)   nmod:topic(没有-17, 时候-13)   advmod(房间-15, 居然-14)   nsubj(没有-17, 房间-15)   advmod(没有-17, 都-16)   dobj(没有-17, 整理-18)   punct(没有-17, .-19)",
+        "root(ROOT-0, 挂-3)   advmod(挂-3, 尽管-1)   nsubj(挂-3, 我-2)   aux:asp(挂-3, 了-4)   nsubj(整理-6, 要求-5)   acl(牌子-9, 整理-6)   dobj(整理-6, 房间-7)   mark(整理-6, 的-8)   dobj(挂-3, 牌子-9)   punct(挂-3, .-10)"
+    ]
 }
 ````
  
